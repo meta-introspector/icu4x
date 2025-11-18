@@ -7,7 +7,7 @@ name = "icu_host_info"
 version = "0.1.0"
 publish = false
 
-rust-version = "1.83"
+# rust-version = "1.83"
 authors = ["The ICU4X Project Developers"]
 edition = "2021"
 repository = "https://github.com/unicode-org/icu4x"

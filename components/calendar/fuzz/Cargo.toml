@@ -17,7 +17,7 @@ arbitrary = { version = "1.4", features = ["derive"] }
 icu_calendar = { path = "..", features = ["compiled_data", "unstable"] }
 
 # Prevent this from interfering with workspaces
-[workspace]
+#[workspace]
 
 [[bin]]
 name = "construction"

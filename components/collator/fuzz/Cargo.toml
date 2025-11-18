@@ -22,8 +22,8 @@ icu_locid = { path = "../../../components/locid" }
 icu_collator = { path = ".." }
 
 # Prevent this from interfering with workspaces
-[workspace]
-members = ["."]
+#[workspace]
+#members = ["."]
 
 [[bin]]
 name = "compare_utf16"

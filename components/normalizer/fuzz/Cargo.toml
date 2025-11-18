@@ -22,7 +22,7 @@ utf8_iter = "1.0.1"
 utf16_iter = "1.0.3"
 
 # Prevent this from interfering with workspaces
-[workspace]
+#[workspace]
 
 [[bin]]
 name = "compare_utf16"
