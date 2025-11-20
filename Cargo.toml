@@ -311,32 +311,32 @@ wasmi = "0.40.0"
 wat = "1"
 
 # Size optimized builds
-[profile.release-opt-size]
-inherits = "release"
-lto = true
-opt-level = "s"
-panic = "abort"
-codegen-units = 1
+# [profile.release-opt-size]
+# inherits = "release"
+# lto = true
+# opt-level = "s"
+# panic = "abort"
+# codegen-units = 1
 
-# Builds with debug metadata but not debug assertions
-# for testing GIGO code paths
-[profile.dev-without-assertions]
-inherits = "dev"
-debug-assertions = false
+# # Builds with debug metadata but not debug assertions
+# # for testing GIGO code paths
+# [profile.dev-without-assertions]
+# inherits = "dev"
+# debug-assertions = false
 
-# For slow tests
-[profile.release-with-assertions]
-inherits = "release"
-debug-assertions = true
+# # For slow tests
+# [profile.release-with-assertions]
+# inherits = "release"
+# debug-assertions = true
 
-[profile.bench]
-lto = true
+# [profile.bench]
+# lto = true
 
-# Enable debug information specifically for memory profiling.
-# https://docs.rs/dhat/0.2.1/dhat/#configuration
-[profile.bench-memory]
-inherits = "bench"
-debug = true
+# # Enable debug information specifically for memory profiling.
+# # https://docs.rs/dhat/0.2.1/dhat/#configuration
+# [profile.bench-memory]
+# inherits = "bench"
+# debug = true
 
 [workspace.metadata.cargo-semver-checks.lints]
 type_method_marked_deprecated.level = "allow" # allow deprecation in patch releases
