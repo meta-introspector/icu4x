@@ -38,7 +38,7 @@ icu_locale = { workspace = true, optional = true }
 [dev-dependencies]
 arraystring = { workspace = true }
 atoi = { workspace = true }
-icu = { path = "../../components/icu", default-features = false }
+icu = { path = "../../components/icu" }
 icu_locale_core = { path = "../../components/locale_core" }
 icu_provider_adapters = { path = "../../provider/adapters" }
 icu_normalizer_data = { workspace = true }

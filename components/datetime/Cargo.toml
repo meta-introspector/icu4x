@@ -45,7 +45,7 @@ icu_locale = { workspace = true, optional = true }
 
 [dev-dependencies]
 calendrical_calculations = { workspace = true }
-icu = { path = "../../components/icu", default-features = false }
+icu = { path = "../../components/icu" }
 icu_calendar = { path = "../calendar", features = ["ixdtf", "unstable"] }
 icu_provider_adapters = { path = "../../provider/adapters" }
 icu_provider_blob = { path = "../../provider/blob", features = ["alloc"] }
